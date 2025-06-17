@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Be Vietnam Pro";
+    color: #030616;
+}
+
+hr {
+    justify-self: center;
+    width: fit-content;
+}
+
+.faqHeader {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.faqHeader h1 {
+    font-size: 36px;
+}
+
+.faqInfo {
+    background-color: #f2f4f8;
+    height: 600px;
+    width: 100%;
+    margin-top: 65px;
+    padding: 50px 320px;
+    line-height: 30px;
+}
+
+.faqInfo span{
+    color: #4E80EE;
+}
+
+.faqbox {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
