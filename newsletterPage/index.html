@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <title>Newsletter Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: "Poppins", "sans-serif";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9fafb;
+        }
+
+        .newsletterHeader {
+            text-align: center;
+        }
+
+        .newsletterHeader h2 {
+            margin: 0;
+            font-size: 40px;
+        }
+        
+        .newsletterHeader p {
+            font-size: 15px;
+            color: #6c727f;
+            line-height: 1.6;
+        }
+
+        .inputHolder {
+            background-color: #fff;
+            border: 1px #fff;
+            border-radius: 1.2rem;
+            margin-top: 20px;
+            padding: 20px;
+            box-shadow: 8px 8px 20px 0px #55555514;
+        }
+
+        input[type="email"] {
+            padding: 13px;
+            box-sizing: border-box;
+            font-size: 15px;
+            width: 100%;
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            text-align: center;
+            margin: 16px 0;
+        }
+
+        input::placeholder {
+            color: #394150;
+            font-family: "Poppins", "sans-serif";
+        }
+
+
+        button {
+            padding: 14px;
+            width: 100%;
+            font-size: 15px;
+            font-family: "Poppins", "sans-serif";
+            background-color: #284bce;
+            color: #fff;
+            border: 1px solid #284bce;
+            border-radius: 0.5rem;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: #284bce;
+            border-color: #173ece;
+            transition: 0.5s all ease-in-out;
+        }
+
+        .inputHolder p {
+            color: #6c727f;
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 640px) {
+            .newsletterPage {
+                padding: 15px;
+            }
+
+            .newsletterHeader h2 {
+                /* padding: 0 20px; */
+                font-size: 23px;
+            }
+
+            .newsletterHeader p {
+                font-size: 14px;
+                margin: 10px 20px;
+            }
+
+            .inputHolder {
+                margin: 20px 10px;
+            }
+
+            .inputHolder p {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 15px;
+                padding: 12px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Basic Newsletter page -->
+    <div class="newsletterPage">
+        <div class="newsletterHeader">
+            <img src="./resources/logo.svg" alt="newsletterLogo">
+            <h2>Join our newsletter</h2>
+            <p>Keep up with our latest collections, exclusive deals, and special offers! <br>We introduce a new
+                collection every week, so stay tuned to snag the <br><span>hottest items just for you.</span></p>
+        </div>
+
+        <!-- Input holder -->
+
+        <div class="inputHolder">
+            <input type="email" id="email" placeholder="Enter your email address"><br>
+            <button>Subscribe now</button>
+            <p>Your email is 100% confidential and won't send you any spam.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
