@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f5f9;
+    font-family: Lato, 'sans-serif';
+}
+
+a {
+    text-decoration: none;
+    color: #4a5567;
+}
+
+a:hover {
+    color: #ffc3be;
+}
+
+h1 {
+    margin: 0;
+    font-family: Poppins, 'sans-serif';
+    font-size: 1.5rem;
+    color: #111729;
+    font-weight: 600;
+}
+
+p {
+    color: #4a5567;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.image-wrapper {
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+}
+
+.image-wrapper img {
+    display: block;
+}
+
+.overlay-image {
+    position: absolute;
+    vertical-align: bottom;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+.avatar-image {
+    border-radius: 0.8rem;
+}
+
+.text-content {
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+main {
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 0.8rem;
+}
+
+main:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 40px #0000000f;
+    transition: all 0.5s ease-in-out;
+}
+
+.author {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.author img {
+    background-color: #f2f5f9;
+    padding: 0.3rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#name {
+    color: #111729;
+    font-weight: 600;
+}
+
+.text-content-paragraph {
+    margin: 1rem 0;
+}
+
+hr {
+    border: none;
+    /* removes default 3D effect */
+    border-top: 1px solid #f2f5f9;
+    /* thin clean line */
+    width: calc(100% + 2rem);
+    /* 2rem = left + right padding */
+    margin: 1rem -1rem;
+    /* escape horizontal padding */
+}
+
+footer {
+    margin-top: 10px;
+}
+
+/* responsive styling (media-queries)*/
+
+@media screen and (max-width: 768px) {
+    main {
+        box-sizing: border-box;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        box-sizing: border-box;
+        margin: 15px;
+    }
+
+    .avatar-image {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .author img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+}
