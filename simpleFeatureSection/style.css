@@ -1,0 +1,152 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* full body styling */
+body {
+    height: 100%;
+    color: #e5e7eb;
+    background-color: #121826;
+    background-image: url(./resources/Background_image@2x.png);
+    font-family: Outfit, 'sans-serif';
+}
+
+/* main page styling */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #fceed8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.7rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    color: #9da3ae;
+    font-size: 16px;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 1.65rem;
+}
+
+.articles {
+    background-color: #212936;
+    border: 1px thin #212936;
+    padding: 16px;
+    border-radius: 1.25rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.articles img {
+    border-radius: 1.2rem;
+}
+
+.articles img:hover {
+    transition: transform all ease-in-out 200ms;
+}
+
+#hand-emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fceed8;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 0.65rem;
+}
+
+#goalpost-emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dee9fc;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 0.65rem;
+}
+
+#comment-emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbe9e6;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 0.65rem;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* responsive styling */
+
+@media screen and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        /* allow items to wrap */
+        gap: 2rem;
+        /* spacing between sections */
+        justify-content: center;
+        /* center them horizontally */
+        
+    }
+
+    .articles {
+        flex: 1 1 300px;
+        /* flexible width but minimum 300px */
+        max-width: 300px;
+        /* optional limit */
+        box-sizing: border-box;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.08rem;
+    }
+    
+}
